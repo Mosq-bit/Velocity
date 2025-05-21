@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Velocity</title>
+</head>
+
+<body>
+  <header class="header__section">
+    <div class="container">
+
+      <div class="header__wrapper">
+        <a href="#" class="header__logo">Velocity</a>
+
+        <nav class="header__nav" id="headerNav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item"><a href="#" class="header__nav-link">Home</a></li>
+            <li class="header__nav-item"><a href="#" class="header__nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="burger" id="burger">
+          <div class="burger__line"></div>
+          <div class="burger__line"></div>
+          <div class="burger__line"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero__section">
+      <div class="container">
+        <div class="hero__wrapper">
+          <h1 class="hero__title">
+            This is Velocity
+          </h1>
+
+          <div class="hero__buttons">
+            <button class="hero__btn">sign up</button>
+            <button class="hero__btn">Learn more</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="block__section">
+      <div class="container">
+        <div class="block__wrapper">
+          <div class="block__text">
+            <h4 class="block__title">what we do</h4>
+            <p class="block__subtitle">This is some text inside of a div block.</p>
+          </div>
+          <div class="block__cards">
+            <div class="block__card">
+              <div class="block__card-pic">
+                <svg class="card-icon">
+                  <use href="sprites.svg#card1"></use>
+                </svg>
+              </div>
+              <div class="block__card-content">
+                <p class="block__card-content-title">Graphic Design</p>
+                <p class="block__card-content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros elementum tristique.</p>
+              </div>
+            </div>
+            <div class="block__card">
+              <div class="block__card-pic">
+                <svg class="card-icon">
+                  <use href="sprites.svg#card2"></use>
+                </svg>
+              </div>
+              <div class="block__card-content">
+                <p class="block__card-content-title">Awesome code</p>
+                <p class="block__card-content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros elementum tristique.</p>
+              </div>
+            </div>
+            <div class="block__card">
+              <div class="block__card-pic">
+                <svg class="card-icon">
+                  <use href="sprites.svg#card3"></use>
+                </svg>
+              </div>
+              <div class="block__card-content">
+                <p class="block__card-content-title">free template</p>
+                <p class="block__card-content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros elementum tristique.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services__section" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="services__wrapper">
+          <div class="services__info">
+            <h2 id="services-heading" class="services__info-title">
+              Services
+            </h2>
+            <p class="services__info-descr">
+              This is some text inside of a div block.
+            </p>
+          </div>
+          <div class="services__cards">
+            <div class="services__card">
+              <div class="services__card-pic">
+                <img src="/assets/services__card-img1.png" alt="Illustration for Service One">
+              </div>
+              <div class="services__card-content">
+                <h3 class="services__card-title">
+                  Service one
+                </h3>
+                <p class="services__card-descr">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                  tristique.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius.
+                </p>
+                <a href="/service-one" class="services__card-btn" role="button">Learn more</a>
+              </div>
+            </div>
+            <div class="services__card">
+              <div class="services__card-pic">
+                <img src="/assets/services__card-img2.png" alt="Illustration for Service Two">
+              </div>
+              <div class="services__card-content">
+                <h3 class="services__card-title">
+                  Service two
+                </h3>
+                <p class="services__card-descr">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                  tristique.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius.
+                </p>
+                <a href="/service-two" class="services__card-btn" role="button">Learn more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tab__section">
+      <div class="container">
+        <div class="tab__info">
+          <h3 class="tab__info-title">Tab Section</h3>
+          <p class="tab__info-descr">This is some text inside of a div block.</p>
+        </div>
+        <div class="tab__wrapper">
+          <div class="tabs">
+            <button class="tab-btn active" data-tab="tab1">Tab Button 1</button>
+            <button class="tab-btn" data-tab="tab2">Tab Button 2</button>
+            <button class="tab-btn" data-tab="tab3">Tab Button 3</button>
+          </div>
+          <div class="tab-content active" id="tab1">
+            <img src="/assets/tab__img.jpg" alt="">
+            <h3>Some Title Here</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+              tristique.
+              Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+              Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+            </p>
+          </div>
+
+          <div class="tab-content" id="tab2">
+            <img src="/assets/tab__img.jpg" alt="">
+            <h3>Some Title Here</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+              tristique.
+              Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+              Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+            </p>
+          </div>
+
+          <div class="tab-content" id="tab3">
+            <img src="/assets/tab__img.jpg" alt="">
+            <h3>Some Title Here</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+              tristique.
+              Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+              Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about__section">
+      <div class="container">
+        <div class="about__wrapper">
+          <!-- Блок "About Velocity" -->
+          <div class="about__velocity">
+            <h4 class="about__title">About Velocity</h4>
+            <p class="about__velocity-descr">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+              tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae
+              erat.
+            </p>
+          </div>
+
+          <!-- Блок полезных ссылок -->
+          <div class="about__useful">
+            <h4 class="about__title">Useful Links</h4>
+            <ul class="useful__list">
+              <li class="useful__item">
+                <a href="#" class="useful__link">Phasellus gravida semper nisi</a>
+              </li>
+              <li class="useful__item">
+                <a href="#" class="useful__link">Suspendisse nisl elit</a>
+              </li>
+              <li class="useful__item">
+                <a href="#" class="useful__link">Dellentesque habitant morbi</a>
+              </li>
+              <li class="useful__item">
+                <a href="#" class="useful__link">Etiam sollicitudin ipsum</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Блок социальных иконок -->
+          <div class="about__social">
+            <h4 class="about__title">Social</h4>
+            <div class="social__links">
+              <!-- <div class="social__link">
+
+              </div> -->
+              <a href="#" class="social__link" aria-label="Twitter">
+                <svg class="social__icon">
+                  <use href="sprites.svg#twitter"></use>
+                </svg>
+                <span class="social__text">Twitter</span>
+              </a>
+
+              <a href="#" class="social__link" aria-label="Facebook">
+                <svg class="social__icon">
+                  <use href="sprites.svg#facebook"></use>
+                </svg>
+                <span class="social__text">Facebook</span>
+              </a>
+              <a href="#" class="social__link" aria-label="Pinterest">
+                <svg class="social__icon">
+                  <use href="sprites.svg#printeres"></use>
+                </svg>
+                <span class="social__text">Pinterest</span>
+              </a>
+              <a href="#" class="social__link" aria-label="Google">
+                <svg class="social__icon">
+                  <use href="sprites.svg#google"></use>
+                </svg>
+                <span class="social__text">Google</span>
+              </a>
+              <a href="#" class="social__link" aria-label="Webflow">
+                <svg class="social__icon">
+                  <use href="sprites.svg#web"></use>
+                </svg>
+                <span class="social__text">Webflow</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer__section">
+      <div class="container">
+        <div class="footer__content">
+          <p class="footer__copyright">Copyright Velocity Inc. Made in Webflow.</p>
+        </div>
+      </div>
+    </footer>
+  </main>
+  <script src="/main.js"></script>
+</body>
+
+</html>

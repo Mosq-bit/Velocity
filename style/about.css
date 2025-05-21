@@ -1,0 +1,159 @@
+.about__section {
+    padding: 80px 10px 35px;
+}
+
+.about__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.about__velocity,
+.about__useful,
+.about__social {
+    width: 100%;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.about__title {
+    font-size: 18px;
+    line-height: 111%;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--grey);
+    margin: 0;
+}
+
+.about__velocity-descr {
+    font-size: 14px;
+    line-height: 179%;
+    color: var(--lightgrey);
+    margin: 0; 
+}
+
+.useful__list {
+    width: 100%;
+    font-size: 13px;
+    line-height: 111%;
+    letter-spacing: 0.22em;
+    color: var(--grey);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.useful__item {
+    display: flex;
+    margin-bottom: 12px; /* Заменяет padding-bottom у ссылки */
+}
+
+.useful__link {
+    width: 100%;
+    padding-bottom: 12px;
+    font-size: 13px;
+    color: #668cad;
+    border-bottom: 1px solid #d5d5e0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.useful__link:hover {
+    color: var(--hover-color, #2e80b6); /* Добавьте переменную или конкретный цвет */
+}
+
+.social__links {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.social__link {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    padding-bottom: 12px;
+    font-size: 13px;
+    line-height: 154%;
+    color: #668CAD;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social__link span {
+    width: 100%;
+    border-bottom: 1px solid #d5d5e0;
+    padding-bottom: 12px;
+}
+
+.social__link:hover {
+    color: var(--hover-color, #2e80b6);
+}
+
+.social__icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    flex-shrink: 0; /* Предотвращает сжатие иконки */
+}
+
+/* Адаптивные стили */
+@media (max-width: 1024px) {
+    .about__wrapper {
+        gap: 20px;
+    }
+    
+    .about__velocity,
+    .about__useful,
+    .about__social {
+        max-width: calc(50% - 10px); /* 2 колонки */
+    }
+}
+
+@media (max-width: 768px) {
+    .about__section {
+        padding: 60px 0;
+    }
+    
+    .about__velocity,
+    .about__useful,
+    .about__social {
+        max-width: 100%; /* 1 колонка */
+    }
+    
+    .about__title {
+        font-size: 16px;
+    }
+    
+    .useful__list {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about__section {
+        padding: 40px 10px;
+    }
+    
+    .about__wrapper {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    
+    .about__title {
+        font-size: 15px;
+        letter-spacing: 0.1em;
+    }
+    
+    .about__velocity-descr {
+        font-size: 13px;
+    }
+    
+    .useful__link,
+    .social__link {
+        font-size: 12px;
+    }
+}

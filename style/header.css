@@ -1,0 +1,114 @@
+.header__section {
+            padding: 11px 10px 24px;
+            position: relative;
+        }
+        
+        .header__wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .header__logo {
+            font-size: 25px;
+            line-height: 100%;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: var(--blue);
+            transition: all .4s ease-in;
+            z-index: 11;
+        }
+        
+        .header__logo:hover {
+            color: var(--grey);
+        }
+        
+        .header__nav {
+        }
+        
+        .header__nav-list {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+        }
+        
+        .header__nav-item {
+        }
+        
+        .header__nav-link {
+            font-size: 15px;
+            line-height: 133%;
+            color: var(--blue);
+            transition: all .4s ease-in;
+        }
+        
+        .header__nav-link:hover {
+            font-size: 16px;
+            color: var(--grey);
+        }
+
+        /* Burger menu styles */
+        .burger {
+            display: none;
+            cursor: pointer;
+            z-index: 11;
+            background: transparent;
+            border: none;
+            outline: none;
+        }
+
+        .burger__line {
+            width: 25px;
+            height: 2px;
+            background-color: var(--blue);
+            margin: 5px;
+            transition: all 0.3s ease;
+        }
+
+        /* Media queries for mobile */
+        @media (max-width: 768px) {
+            .burger {
+                display: block;
+            }
+
+            .header__nav {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 70%;
+                height: 100vh;
+                background-color: var(--transparent-white);
+                backdrop-filter: blur(5px);
+                padding: 80px 20px 20px;
+                transition: right 0.4s ease-in;
+                z-index: 10;
+                box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+            }
+
+            .header__nav.active {
+                right: 0;
+            }
+
+            .header__nav-list {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .header__nav-link:hover {
+                font-size: 15px;
+                padding-left: 10px;
+            }
+        }
+
+        /* Burger animation when active */
+        .burger.active .burger__line:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .burger.active .burger__line:nth-child(2) {
+            opacity: 0;
+        }
+
+        .burger.active .burger__line:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }

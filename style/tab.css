@@ -1,0 +1,182 @@
+.tab__info {
+    padding: 100px 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.tab__info-title {
+    font-size: 30px;
+    line-height: 120%;
+    letter-spacing: 0.17em;
+    color: var(--grey);
+}
+
+.tab__info-descr {
+    font-size: 17px;
+    line-height: 118%;
+    letter-spacing: 0.18em;
+    color: var(--lightgrey);
+}
+
+.tab__wrapper {
+    margin-top: 60px;
+    padding-bottom: 90px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 50px;
+    flex-wrap: wrap; /* Добавлено для адаптивности */
+}
+
+.tab-btn {
+    padding: 12px 30px; /* Увеличено для лучшей кликабельности */
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 131%;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--white);
+    background: #92a0ad;
+    transition: all 0.3s ease;
+    border: none; /* Добавлено для единообразия */
+    cursor: pointer; /* Улучшает UX */
+}
+
+.tab-btn:hover {
+    background: #2e80b6;
+    transform: translateY(-2px); /* Добавлен эффект поднятия */
+}
+
+.tab-btn.active {
+    background: #2e80b6;
+    box-shadow: 0 4px 8px rgba(46, 128, 182, 0.3); /* Добавлена тень */
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content h3 {
+    padding-top: 15px;
+    font-size: 31px;
+    line-height: 116%;
+    text-align: center;
+    color: var(--grey);
+    margin-bottom: 20px; /* Добавлен отступ */
+}
+
+.tab-content p {
+    margin-top: 14px;
+    padding: 0 116px;
+    font-size: 13px;
+    line-height: 192%;
+    text-align: center;
+    color: var(--lightgrey);
+}
+
+.tab-content.active {
+    display: block;
+    animation: fadeIn 0.5s ease; /* Добавлена анимация */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Адаптивные стили */
+@media (max-width: 1024px) {
+    .tab__info {
+        padding: 80px 10px 0;
+    }
+    
+    .tab__info-title {
+        font-size: 26px;
+    }
+    
+    .tab__info-descr {
+        font-size: 15px;
+    }
+    
+    .tab-content p {
+        padding: 0 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .tab__info {
+        padding: 60px 10px 0;
+    }
+    
+    .tab__wrapper {
+        margin-top: 40px;
+        padding-bottom: 60px;
+    }
+    
+    .tabs {
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+    
+    .tab-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    .tab-content h3 {
+        font-size: 26px;
+    }
+    
+    .tab-content p {
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tab__info {
+        padding: 40px 10px 0;
+        gap: 12px;
+    }
+    
+    .tab__info-title {
+        font-size: 22px;
+        letter-spacing: 0.1em;
+    }
+    
+    .tab__info-descr {
+        font-size: 14px;
+    }
+    
+    .tab__wrapper {
+        margin-top: 30px;
+        padding-bottom: 40px;
+    }
+    
+    .tabs {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .tab-btn {
+        width: 100%;
+        max-width: 280px;
+    }
+    
+    .tab-content h3 {
+        font-size: 22px;
+        padding-top: 10px;
+    }
+    
+    .tab-content p {
+        padding: 0 15px;
+        font-size: 12px;
+    }
+}

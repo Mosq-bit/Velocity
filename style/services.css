@@ -1,0 +1,189 @@
+.services__section {
+    background-color: var(--bg-dark);
+}
+
+.services__wrapper {
+    padding: 80px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    gap: 60px;
+}
+
+.services__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+}
+
+.services__info-title {
+    font-size: 30px;
+    line-height: 120%;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--white);
+}
+
+.services__info-descr {
+    font-size: 17px;
+    line-height: 118%;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--beige);
+}
+
+.services__cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 20px;
+}
+
+.services__card {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 19px;
+    width: 100%; /* Добавлено для лучшего контроля ширины */
+}
+
+.services__card-pic img {
+    max-width: 100%; /* Обеспечиваем адаптивность изображений */
+    height: auto;
+}
+
+.services__card-content {
+    padding-top: 2px;
+    text-align: center;
+    color: var(--white);
+}
+
+.services__card-title {
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+}
+
+.services__card-descr {
+    padding: 0 30px;
+    margin: 23px 0 27px 0;
+    font-size: 14px;
+    line-height: 179%;
+}
+
+.services__card-btn {
+    padding: 10px 31px 12px;
+    border: 1px solid var(--white);
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 131%;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--white);
+    transition: all 0.3s ease; /* Плавный переход для hover-эффектов */
+}
+
+.services__card-btn:hover {
+    transform: translateY(-5px);
+    color: var(--blue);
+    border-color: var(--blue);
+}
+
+/* Медиазапросы для адаптивности */
+
+/* Планшеты (768px и меньше) */
+@media (max-width: 768px) {
+    .services__wrapper {
+        padding: 60px 10px;
+        gap: 40px;
+    }
+    
+    .services__info-title {
+        font-size: 26px;
+    }
+    
+    .services__info-descr {
+        font-size: 15px;
+    }
+    
+    .services__cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    .services__card {
+        max-width: 500px;
+    }
+    
+    .services__card-descr {
+        padding: 0 15px;
+    }
+}
+
+/* Мобильные устройства (480px и меньше) */
+@media (max-width: 480px) {
+    .services__wrapper {
+        padding: 40px 10px;
+        gap: 30px;
+    }
+    
+    .services__info-title {
+        font-size: 22px;
+        letter-spacing: 0.1em;
+    }
+    
+    .services__info-descr {
+        font-size: 14px;
+        letter-spacing: 0.1em;
+    }
+    
+    .services__card {
+        padding: 10px;
+        gap: 15px;
+    }
+    
+    .services__card-title {
+        font-size: 18px;
+        letter-spacing: 0.2em;
+    }
+    
+    .services__card-descr {
+        font-size: 13px;
+        margin: 15px 0 20px 0;
+        padding: 0 10px;
+    }
+    
+    .services__card-btn {
+        padding: 8px 20px 10px;
+        font-size: 14px;
+    }
+}
+
+/* Очень маленькие экраны (360px и меньше) */
+@media (max-width: 360px) {
+    .services__info-title {
+        font-size: 20px;
+    }
+    
+    .services__info-descr {
+        font-size: 13px;
+    }
+    
+    .services__card-title {
+        font-size: 16px;
+    }
+    
+    .services__card-descr {
+        font-size: 12px;
+    }
+}
